@@ -1,11 +1,59 @@
+@media (min-width: 1551px) and (max-width: 2660px){
+     .service-card p {
+          font-size: 11px;
+          line-height: 25px;
+     }
+     .service-content-wrap h1 {
+          font-size: 28px;
+          line-height: 40px;
+      }
+      .service-content-wrap p {
+          margin-bottom: 15px;
+          font-size: 15px;
+          line-height: 20px;   
+      }
+      .checklist li {
+          margin-bottom: 19px;
+      }
+}
+
 /* Normal desktop :1200px. */
-@media (min-width: 1200px) and (max-width: 1500px) {
+@media (min-width: 1200px) and (max-width: 1550px) {
      .service-shape-5{
           visibility: hidden;
+      }
+     .service-card p {
+          font-size: 13px;
+          line-height: 25px;
      }
      .people-service-shape img{
           visibility: visible;
      }
+     .container{
+          padding: 4rem;
+     }
+     .experience-box {
+          width: 180px;
+          height: 170px;
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 30px;
+          position: absolute;
+          bottom: -45px;
+          left: -20px;
+     }
+     .service-content-wrap h1 {
+          font-size: 28px;
+          line-height: 40px;
+      }
+      .service-content-wrap p {
+          margin-bottom: 15px;
+          font-size: 15px;
+          line-height: 20px;    
+      }
+      .checklist li {
+          margin-bottom: 19px;
+      }
 }
 
 
@@ -17,9 +65,71 @@
      .people-service-shape{
           visibility: hidden;
      }
+     .contact-card{
+          width: 425px;
+     }
+     #grid-area{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          row-gap: 22px;
+          column-gap: 22px;
+     }
+     .experience-box {
+          width: 150px;
+          height: 150px;
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 30px;
+          position: absolute;
+          bottom: -45px;
+          left: -16px;
+     }
+     .service-card p {
+          font-size: 12px;
+          line-height: 20px;
+     }
+     .shape-4 img {
+          max-width: 90px;
+      }
+      .service-content-wrap h1 {
+          font-size: 21px;
+          margin: 5px 0;
+          line-height: 30px;
+      }
+      .service-content-wrap p {
+          margin-bottom: 11px;
+          font-size: 13px;
+          line-height: 18px;    
+      }
+      .checklist li {
+          margin-bottom: 11px;
+      }
+      .service-content-wrap p.subtitle {
+          font-size: 15px;
+          line-height: 10px;
+      }
 }
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+     .experience-box {
+          width: 140px;
+          height: 140px;
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 25px;
+          position: absolute;
+          bottom: -45px;
+          left: -9px;
+     }
+     .contact-card{
+          width: 425px;
+     }
+     #grid-area{
+          display: grid;
+          grid-template-columns: repeat(1fr);
+          row-gap: 22px;
+          column-gap: 22px;
+     }
 }
 
  
@@ -59,28 +169,31 @@
           line-height: 40px;
      }
      #content-area h1{
-          font-size: 26px;
+          font-size: 22px;
           font-weight: 700;
-          line-height: 42px;
-          text-align: center;
+          line-height: 38px;
+          text-align: left;
       }
       #content-area p{
-          font-size: 16px;
-          line-height: 25px;
+          font-size: 14px;
+          line-height: 23px;
       }
      .content-wrapper{
           padding: 100px 0;
      }
      .experience-box {
-          width: 120px;
-          height: 120px;
+          width: 105px;
+          height: 105px;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 19px;
           position: absolute;
           bottom: -45px;
           left: -9px;
      }
-     .shape-4 img {
-          max-width: 102px;
-          width: 100%;
+     .shape-4 {
+          right: 33px;
+          max-width: 85px;
       }
      .service-content-wrap p.subtitle {
           font-family: 'Poppins',sans-serif;
@@ -88,22 +201,34 @@
           text-align: center;
      }
      .service-content-wrap h1 {
-          font-size: 23px;
+          font-size: 19px;
           line-height: 40px;
           margin: 15px 0;
           text-align: center;
       }
+     .service-content-wrap p {
+          font-size: 14px;
+     }
+     .checklist li{
+          font-size: 16px;
+     }
 }
 /* small mobile :280px. */
 @media only screen and (max-width:220px){
-     .contact-card{
-          padding: 20px;
-     }
 }
 /* Large Mobile :480px. */
 @media only screen and (max-width: 767px) {
+     .contact-card{
+          width: 425px;
+     }
+     #grid-area{
+          display: grid;
+          grid-template-columns: repeat(1fr);
+          row-gap: 22px;
+          column-gap: 22px;
+     }
 }
-@media only screen and (min-width: 220px) and (max-width: 410px){
+@media only screen and (min-width: 520px) and (max-width: 767px){
      .people_service_title h5{
           text-align: center;
      }
@@ -111,5 +236,15 @@
           font-weight: 700;
           font-size: 20px;
           line-height: 40px;
+     }
+     .experience-box {
+          width: 120px;
+          height: 120px;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 19px;
+          position: absolute;
+          bottom: -45px;
+          left: -9px;
      }
 }
