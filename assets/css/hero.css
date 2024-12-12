@@ -1,0 +1,324 @@
+.hero-section {
+       /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/img/banner-bg.jpg') center/cover no-repeat; */
+       color: white;
+       min-height: 850px;
+       height: 100%;
+       position: relative;
+       padding-bottom: 153px;
+       z-index: 1;
+       overflow: hidden;
+   }
+   @keyframes fadeInUp {
+       0%{
+              transform: scale(1);
+              opacity: .5;
+       }
+       100%{
+              transform: scale(1.2);
+              opacity: 1;
+       }
+   }
+   .hero-section::after{
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       transition-duration: .5s;
+       content: "";
+       z-index: -2;
+       background: url('/assets/img/banner-bg.jpg') center/cover no-repeat;
+       animation: fadeInUp 9s linear infinite alternate;
+   }
+   .hero-section::before{
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       content: "";
+       z-index: -1;
+       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+   }
+   .content-wrapper{
+       padding: 150px 0;
+   }
+   #content-area h1{
+       margin-bottom: 45px;
+   }
+   #content-area h1 span {
+       color: var(--primary); /* Primary color for Elektrotechniek & Keukentechniek */
+   }
+   #content-area p span{
+       color: var(--secondary);
+   }
+   #content-area p{
+       color: var(--white);
+       max-width: 700px;
+       width: 100%;
+   }
+
+
+
+
+
+
+
+/* contact section */
+.contact-area{
+    margin-top: -150px;
+    position: relative;
+    z-index: 1;
+    
+}
+.contact-card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 38px 8px 38px 38px;
+    min-height: 266px;
+    max-width: 425px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    background-color: var(--white);
+    z-index: 1;
+    gap: 20px;
+    cursor: pointer;
+    transition-duration: .5s;
+   }
+.contact-card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition-duration: .5s;
+    z-index: -1;
+    background-color: var(--primary);
+}
+.contact-card.active{
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.contact-card:hover::after{
+    height: 100%;
+}
+.contact-card:hover{
+    background-color: var(--primary);
+    color: var(--white);
+}
+.contact-card:hover .contact-wrap a,.contact-card.active .contact-wrap a{
+    color: var(--white);
+}
+.contact-card:hover .contact-card-icon,.contact-card.active .contact-card-icon  {
+    border: 1px solid var(--white);
+}
+.contact-card-icon {
+       font-size: 40px;
+       border: 1px solid transparent;
+       color: white;
+       background-color: var(--primary);
+       border-radius: 1px;
+       width: 67px;
+       height: 67px;
+       padding: 18px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+   .contact-wrap h5 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 54px;
+}
+
+.contact-wrap p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 13px 0;
+}
+
+.contact-wrap a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--primary);
+}
+.contact-card .contact-card-link:hover {
+    text-decoration: underline;
+}
+/* contact section */
+
+
+
+
+/* service section for earning */
+
+  .checklist li {
+    list-style: none;
+    margin-bottom: 25px;
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 32px;
+  }
+  .checklist li::before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    margin-right: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: var(--white);
+    font-size: 12px;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #48B02C;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    line-height: 10px;
+  }
+
+
+#service-wraper-bg img {
+    width: 100%;
+    transition-duration: .8s;
+}
+
+#service-wraper-bg {
+    position: relative;
+    z-index: 1;
+}
+.service-bg-img{
+    position: relative;
+    overflow: hidden;
+}
+.service-bg-img::after{
+   position: absolute;
+   content: "";
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: -1;
+   height: 100%;
+   background: linear-gradient(rgba(34, 34, 34, 1)rgba(34, 34, 34, 0.9)rgba(0, 0, 0, 0));
+}
+.service-bg-img:hover img{
+    transform: scale(1.1);
+}
+.experience-box {
+    width: 180px;
+    height: 180px;
+    border-radius: 0;
+    background: var(--primary);
+    display: flex;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    position: absolute;
+    bottom: -40px;
+    left: -76px;
+}
+.shape-4 img {
+    max-width: 150px;
+    width: 100%;
+}
+
+.shape-4 {
+    position: absolute;
+    right: 37px;
+    animation: fadeInUp 3s infinite alternate;
+}
+
+/* content area */
+.service-shape-5 img{
+    max-height: 800px;
+    width: 100%;
+}
+.service-content-wrap p.subtitle{
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 30px;
+}
+.service-content-wrap h1 {
+    color: #222;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54px;
+    margin: 15px 0;
+}
+
+.service-content-wrap p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 35px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.service-content-wrap p span{
+    color: var(--secondary);
+}
+/* service section for earning */
+
+
+
+
+/* people service */
+/* .people_service {
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    z-index: 1;
+}
+.people_cricle_span{
+    position: relative;
+    display: inline-block;
+}
+.people_cricle_span::after{
+    width: 37px;
+    content: "";
+    height: 37px;
+    background-color: rgba(187, 61, 78, 0.05);
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    transition: .4s ease-out;
+    bottom: 0;
+    
+}
+.people_cricle_span:hover::after{
+    background-color: rgba(216, 182, 144, 0.1);
+    height: 28px;
+    top: -30px;
+    right: -20px;
+} */
+.service-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  .service-card:hover {
+    transform: scale(1.05);
+  }
+  .service-icon {
+    font-size: 40px;
+    color: #e63946;
+    margin-bottom: 15px;
+  }
+/* people service */
