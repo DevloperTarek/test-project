@@ -1,15 +1,34 @@
-(function ($) {
-       "use strict";
+     //  google map
+       // Google Maps Initialization
+       function initMap() {
+         const location = { lat: 52.0116, lng: 4.3571 }; // Coordinates of Zuid-Holland
+         const map = new google.maps.Map(document.getElementById("map"), {
+             zoom: 8,
+             center: location,
+         });
+   
+         // Add marker
+         new google.maps.Marker({
+             position: location,
+             map: map,
+         });
+     }
+
+
+$(document).ready(function(){
+
+   // jQuery methods go here...
+ 
        
        // preloader
        $(window).on('load',function(){
               $('#preloader').fadeOut(1000);
        })
        // meanmenu
-       $('#mobile-menu').meanmenu({
-              meanMenuContainer: '.mobile-menu',
-              meanScreenWidth: "991"
-       });
+      //  $('#mobile-menu').meanmenu({
+      //         meanMenuContainer: '.mobile-menu',
+      //         meanScreenWidth: "991"
+      //  });
        
        // One Page Nav
        // var top_offset = $('.header-area').height() - 10;
@@ -92,28 +111,29 @@
     //    mainSlider();
        
        // owlCarousel
-       $('.owl-carousel').owlCarousel({
-           loop:true,
-           margin:20,
-           autoplay:false,
-           autoplaySpeed:2000,
-              navText:['<i class="fas fa-long-arrow-alt-right"></i>','<i class="fas fa-long-arrow-alt-left"></i>'],
-           nav:true,
-              dots:false,
-           responsive:{
+       $(".our_work_wrap").owlCarousel({
+            loop:true,
+            margin:20,
+            nav: true,
+            autoplay:false,
+            autoplaySpeed:2000,
+            navText:['<i class="fas fa-long-arrow-alt-right"></i>','<i class="fas fa-long-arrow-alt-left"></i>'],
+            responsive:{
                0:{
                    items:1,
-                   nav:false,
                },
                767:{
                    items:2
                },
                992:{
-                   items:2
+                   items:3
                }
            }
        })
        
+
+  // Initialize map when window loads
+  window.onload = initMap;
        /* magnificPopup img view */
     //    $('.popup-image').magnificPopup({
     //           type: 'image',
@@ -160,19 +180,19 @@
     //  }, 2000);
        
        // scrollToTop
-       $.scrollUp({
-              scrollName: 'scrollUp', // Element ID
-              topDistance: '300', // Distance from top before showing element (px)
-              topSpeed: 300, // Speed back to top (ms)
-              animation: 'fade', // Fade, slide, none
-              animationInSpeed: 200, // Animation in speed (ms)
-              animationOutSpeed: 200, // Animation out speed (ms)
-              scrollText:' <i class="fas fa-angle-up"></i>', // Text for element
-              activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-       });
+      //  $.scrollUp({
+      //         scrollName: 'scrollUp', // Element ID
+      //         topDistance: '300', // Distance from top before showing element (px)
+      //         topSpeed: 300, // Speed back to top (ms)
+      //         animation: 'fade', // Fade, slide, none
+      //         animationInSpeed: 200, // Animation in speed (ms)
+      //         animationOutSpeed: 200, // Animation out speed (ms)
+      //         scrollText:' <i class="fas fa-angle-up"></i>', // Text for element
+      //         activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+      //  });
        
        // WOW active
        new WOW().init();
        
        
-       })(jQuery);
+       });

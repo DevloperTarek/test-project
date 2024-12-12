@@ -14,12 +14,14 @@
 		<!-- CSS here -->
         <link rel="stylesheet" href="./assets/css/bootstrapv-5.3.3.min.css">
         <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href=".assets/css/animatev-4.0.0.min.css">
+        <link rel="stylesheet" href="./assets/css/animatev-4.0.0.min.css">
         <!-- <link rel="stylesheet" href="./css/owl.theme.defaultv-2.3.4.min.css"> -->
         <!-- <link rel="stylesheet" href="css/header.css"> -->
         <link rel="stylesheet" href="./assets/css/all.min.css">
         <!-- <link rel="stylesheet" href="./css/boxicons.min.css"> -->
         <link rel="stylesheet" href="./assets/css/default.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
 
         <link rel="stylesheet" href="./assets/css/hero.css">
         <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -159,7 +161,7 @@
 
         <!-- people helpfull service -->
         <section class="people_helpFull_Service pt-120 pb-120 position-relative">
-            <div class=" d-none d-lg-block people-service-shape position-absolute left-0 WOW animate__animated animate__fadeInLeft animate__slow animate__delay-3s">
+            <div class=" d-none d-lg-block people-service-shape WOW animate__animated animate__fadeInLeft animate__slow animate__delay-3s">
                 <img src="./assets/img/shape/person-service-shape.png" alt="people service-shape">
             </div>
             <div class="container">
@@ -287,8 +289,11 @@
         <!-- people helpfull service -->
         <!-- Our work section -->
         <section class="background-design our_work pt-80 pb-80">
+            <!-- <div class="our-work-shape position-absolute top-0 start-0">
+                <img src="./assets/img/shape/our-work-shape.jpg" alt="our-work-shape">
+            </div> -->
             <div class="container">
-                <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex justify-content-between mb-100" id="our-work-top-title">
                     <div class="out-work-title">
                         <p>ELEKTROTECHNIEK • KEUKENTECHNIEK</p>
                         <h1>Ons werk</h1>
@@ -298,15 +303,27 @@
                 <div class="mt-60">
                     <div class="our_work_wrap owl-carousel">
                         <div class="project-item text-start mb-30">
-                            <img src="./assets/img/our-works/our-work-1.jpg" alt="Hotels">
+                            <div class="our_work_img">
+                                <img src="./assets/img/our-works/our-work-1.jpg" alt="snackbar">
+                            </div>
                             <h6>Hotels, restaurants & snackbar</h6>
                         </div>
                         <div class="project-item text-start mb-30">
-                            <img src="./assets/img/our-works/our-work-2.jpg" alt="Healthcare">
+                            <div class="our_work_img">
+                                <img src="./assets/img/our-works/our-work-2.jpg" alt="Zorg & ziekenhuizen">
+                            </div>
                             <h6>Zorg & ziekenhuizen</h6>
                         </div>
                         <div class="project-item text-start mb-30">
-                            <img src="./assets/img/our-works/our-work-3.jpg" alt="Schools">
+                            <div class="our_work_img">
+                                <img src="./assets/img/our-works/our-work-3.jpg" alt="Scholen">
+                            </div>
+                            <h6>Scholen</h6>
+                        </div>
+                        <div class="project-item text-start mb-30">
+                            <div class="our_work_img">
+                                <img src="./assets/img/our-works/our-work-1.jpg" alt="Scholen">
+                            </div>
                             <h6>Scholen</h6>
                         </div>
                     </div>
@@ -314,8 +331,37 @@
             </div>
         </section>
         <!-- Our work section -->
+        <!-- google map -->
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <!-- Left Text Content -->
+                <div class="col-md-6">
+                    <h6 class="text-danger text-uppercase fw-bold">Wat Is Ons Werkgebied?</h6>
+                    <h2 class="fw-bold">Zuid-Holland</h2>
+                    <p>
+                        <span class="highlight">XXXX</span> is actief in Zuid-Holland, waar ik mijn expertise in elektrotechniek 
+                        en keukentechniek met trots aanbied. Als eenmanszaak bedien ik zowel particuliere als zakelijke klanten 
+                        in diverse gemeenten en plaatsen, zoals Rotterdam, Den Haag, Leiden, Dordrecht en Zoetermeer. 
+                    </p>
+                    <p>
+                        Of je nu een renovatie plant in een van de historische wijken van Delft of een nieuwe keuken wilt 
+                        installeren in Gouda, ik sta klaar om je te ondersteunen.
+                    </p>
+                    <p>
+                        Met een focus op kwaliteit en klanttevredenheid streef ik ernaar om in heel Zuid-Holland betrouwbare 
+                        en innovatieve oplossingen te bieden.
+                    </p>
+                </div>
+        
+                <!-- Right Map or Image -->
+                <div class="col-md-6">
+                    <div id="map" class="map-container"></div>
+                </div>
+            </div>
+        </div>
+        <!-- google map -->
         <!-- footer area -->
-        <div class="footer-area pt-70 pb-80 footer-bg">
+        <!-- <div class="footer-area pt-70 pb-80 footer-bg">
             <div class="shape-one">
                 <img src="./images/shape/why-choose-slice.png" alt="">
             </div>
@@ -390,23 +436,22 @@
         </div>
         <div class="footer-bottom pt-25 pb-25 text-center footer-bg">
             Copyright &amp; 2018 <a href="#">AUhandy</a>. Get The Theme
-        </div>
+        </div> -->
         <!-- footer area -->
 
         <!-- scrollup -->
         <div id="scrollUp">
             <!-- <i class="fas fa-angle-up"></i> -->
         </div>
-        <!-- cube carousel  -->
          
 	<!-- JS here -->
-       <script src="./assets/js/jquery-v3.1.4.min.js"></script>
-       <!-- <script src="./js/modernizr-3.5.0.min.js"></script> -->
-       <!-- <script src="./js/jquery.scrollUp.min.js"></script> -->
-       <script src="./assets/js/owl.carousel.min.js"></script>
-       <script src="./assets/js/all.min.js"></script>
-       <script src="./assets/js/wow.min.js"></script>
-       <script src="./assets/js/script.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/all.min.js"></script>
+        <script src="./assets/js/wow.min.js"></script>
+        <script src="./assets/js/script.js"></script>
        
     </body>
 </html>

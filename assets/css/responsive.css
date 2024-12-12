@@ -1,7 +1,7 @@
 @media (min-width: 1551px) and (max-width: 2660px){
      .service-card p {
-          font-size: 11px;
-          line-height: 25px;
+          font-size: 16px;
+          line-height: 28px;
      }
      .service-content-wrap h1 {
           font-size: 28px;
@@ -111,6 +111,19 @@
 }
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+     #our-work-top-title{
+          display: flex;
+          flex-direction: column;
+          /* align-items: flex-start;
+          justify-content: flex-start; */
+          gap: 40px;
+     }
+     .out-work-title p {
+          margin-bottom: 5px;
+     }
+     .description-text{
+          margin-bottom: 30px;
+     }
      .experience-box {
           width: 140px;
           height: 140px;
@@ -142,6 +155,19 @@
           text-align: center;
           padding: 15px;
           gap: 20px;
+     }
+     #our-work-top-title{
+          display: flex;
+          flex-direction: column;
+          /* align-items: flex-start;
+          justify-content: flex-start; */
+          gap: 20px;
+     }
+     .out-work-title p {
+          margin-bottom: 5px;
+     }
+     .description-text{
+          margin-bottom: 20px;
      }
      .contact-card-icon {
           font-size: 30px;
@@ -246,5 +272,18 @@
           position: absolute;
           bottom: -45px;
           left: -9px;
+     }
+     #our-work-top-title{
+          display: flex;
+          flex-direction: column;
+          /* align-items: flex-start;
+          justify-content: flex-start; */
+          gap: 40px;
+     }
+     .out-work-title p {
+          margin-bottom: 5px;
+     }
+     .description-text{
+          margin-bottom: 30px;
      }
 }
