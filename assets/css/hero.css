@@ -1,5 +1,5 @@
 .hero-section {
-       /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/img/banner-bg.jpg') center/cover no-repeat; */
+       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/img/banner-bg.jpg') center/cover no-repeat;
        color: white;
        min-height: 850px;
        height: 100%;
