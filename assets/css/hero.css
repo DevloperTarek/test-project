@@ -306,19 +306,159 @@
     top: -30px;
     right: -20px;
 } */
+.people_service_title h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--primary);
+    margin-bottom: 0;
+}
+
+.people_service_title h1 {
+    color: #222;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    margin: 10px 0 17px;
+}
+
 .service-card {
-    border: 1px solid #ddd;
+    border: 1px solid rgba(0, 119, 182, 0.1);
     border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s;
+    padding: 30px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+    cursor: pointer;
   }
   .service-card:hover {
-    transform: scale(1.05);
+    border-color: transparent;
+    box-shadow: 0 0 10px 0 rgba(0, 119, 182, 0.1);
   }
   .service-icon {
     font-size: 40px;
     color: #e63946;
     margin-bottom: 15px;
   }
+  .service-icon {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-bottom: 29px;
+}
+
+.circle-service {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background: rgba(187, 61, 78, 0.1);
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.service-icon img {
+    width: 100%;
+}
+
+.service-card:hover .service-icon .circle-service {
+    transform: scale(1.7);
+    border-radius: 30px 40px 83px;
+    background: rgba(187, 61, 78, 0.2);
+    z-index: -1;
+}
+    /* service content */
+    .service-card h5 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #000;
+        margin-bottom: 7px;
+    }
+    
+    .service-card p {
+        font-family: 'Poppins',sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #333;
+    }
+/* service shape styling*/
+.people_helpFull_Service {
+    position: relative;
+    z-index: 1;
+}
+@keyframes fadeInLeftSide {
+    0%{
+        transform: scale(1) translateX(0);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(1.2) translateX(20px);
+        opacity: 1;
+    }
+}
+section.people_helpFull_Service .people-service-shape{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+section.people_helpFull_Service .people-service-shape img {
+    transform: scale(0);
+    transition: transform 3s;
+    z-index: -1;
+    max-height: 500px;
+    animation: fadeInLeftSide 2s linear infinite forwards;
+}
 /* people service */
+
+
+
+
+/* ours work */
+
+.background-design {
+    background: #F2EFEB; /* হালকা ব্যাকগ্রাউন্ড রঙ */
+    padding: 50px 20px;
+  }
+
+  .out-work-title h1 {
+    color: #000;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+}
+  .project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .project-item h6 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .custom-shadow {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .description-text {
+    max-width: 670px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.out-work-title p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--primary);
+    margin-bottom: 32px;
+}
+/* ours work */

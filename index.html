@@ -8,21 +8,22 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	    <link rel="shortcut icon" type="image/x-icon" href="images/logo/task-favicon.png">
+	    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/banner-bg.jpg">
         <!-- Place favicon.ico in the root directory -->
 
 		<!-- CSS here -->
-        <link rel="stylesheet" href="/assets/css/bootstrapv-5.3.3.min.css">
-        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="/assets/css/animatev-4.0.0.min.css">
+        <link rel="stylesheet" href="./assets/css/bootstrapv-5.3.3.min.css">
+        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href=".assets/css/animatev-4.0.0.min.css">
+        <!-- <link rel="stylesheet" href="./css/owl.theme.defaultv-2.3.4.min.css"> -->
         <!-- <link rel="stylesheet" href="css/header.css"> -->
-        <link rel="stylesheet" href="/assets/css/all.min.css">
-        <link rel="stylesheet" href="/assets/css/boxicons.min.css">
-        <link rel="stylesheet" href="/assets/css/default.css">
+        <link rel="stylesheet" href="./assets/css/all.min.css">
+        <!-- <link rel="stylesheet" href="./css/boxicons.min.css"> -->
+        <link rel="stylesheet" href="./assets/css/default.css">
 
-        <link rel="stylesheet" href="/assets/css/hero.css">
-        <link rel="stylesheet" href="/assets/css/style.css">
-        <link rel="stylesheet" href="/assets/css/responsive.css">
+        <link rel="stylesheet" href="./assets/css/hero.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
        </head>
     <body>
         <!--[if lte IE 9]>
@@ -35,76 +36,6 @@
         </div>
         <!-- preloader -->
 
-
-        
-       <!-- header toggle event popup -->
-       <!-- <div class="header-toggle-popup full_height light-bg pt-30 pb-30">
-       <div class="cross_btn"><i class="fas fa-times-circle" id="close_toggle"></i></div> -->
-       <!-- menu-area -->
-       <!-- <div class="menu-area wow animate__animated animate__fadeInLeft animate__slow">
-              <ul>
-              <li class="active"><a href="index.html">Home</a>
-                     <ul class="dropdown">
-                            <li><a href="home-one.html">Home page 1</a></li>
-                            <li><a href="home-two.html">Home page 2</a></li>
-                     </ul>
-              </li>
-              <li><a href="service.html">Services</a></li>
-              <li><a href="service.html">Projects</a></li>
-              <li><a href="service.html">Pages</a>
-                     <ul class="dropdown">
-                            <li><a href="page-one.html">Othes page 1</a></li>
-                            <li><a href="page-two.html">Others page 2</a></li>
-                     </ul>
-              </li>
-              <li><a href="service.html">Blog</a>
-                     <ul class="dropdown">
-                            <li><a href="blog-details.html">Blog details page</a></li>
-                     </ul>
-              </li>
-              <li><a href="service.html">Contact</a></li>
-              </ul>
-       </div>
-       </div> -->
-
-        <!-- header menu area -->
-        <!-- <div class="header-menu sticky-header absolute-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="menu-area wow animate__animated animate__fadeInLeft animate__slow">
-                            <ul>
-                                <li class="active"><a href="index.html">Home</a>
-                                    <ul class="dropdown">
-                                        <li><a href="home-one.html">Home page 1</a></li>
-                                        <li><a href="home-two.html">Home page 2</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="service.html">Services</a></li>
-                                <li><a href="service.html">Projects</a></li>
-                                <li><a href="service.html">Pages</a>
-                                    <ul class="dropdown">
-                                        <li><a href="page-one.html">Othes page 1</a></li>
-                                        <li><a href="page-two.html">Others page 2</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="service.html">Blog</a>
-                                    <ul class="dropdown">
-                                        <li><a href="blog-details.html">Blog details page</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="service.html">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 text-right">
-                        <div class="search_bar wow animate__animated animate__fadeInRight animate__slow" id="search_hear">
-                            <i class="fas fa-search" id="search__"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <!-- header menu area -->
         <!-- banner area -->
        <section class="hero-section d-flex align-items-center">
@@ -229,12 +160,14 @@
         <!-- service for earning -->
 
         <!-- people helpfull service -->
-        <section class="people_helpFull_Service pt-120 pb-120">
-            <div class="shape_of_people_service"></div>
+        <section class="people_helpFull_Service pt-120 pb-120 position-relative">
+            <div class=" d-none d-lg-block people-service-shape position-absolute left-0 WOW animate__animated animate__fadeInLeft animate__slow animate__delay-3s">
+                <img src="./assets/img/shape/person-service-shape.png" alt="people service-shape">
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="people_service_title text-start mb-17">
+                        <div class="people_service_title text-start mb-17 WOW animate__animated animate__fadeIn animate__slow animate__delay-2s">
                             <h5>ELEKTROTECHNIEK • KEUKENTECHNIEK</h5>
                             <h1>Voorbeelden van onze diensten.</h1>
                         </div>
@@ -242,44 +175,147 @@
                 </div>
                 <!-- people services -->
                 <div class="people_service_wrap">
-                    <div class="row g-4">
+                    <div class="row g-20">
                         <!-- Single Card -->
-                        <div class="col-md-4 col-lg-3">
-                          <div class="service-card">
-                            <div class="service-icon">⚡</div>
-                            <h5>Zonnepanelen</h5>
-                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                        <div class="col-md-6 col-12 col-lg-3">
+                          <div class="service-card WOW animate__animated animate__fadeInLeft animate__slow animate__delay-2s">
+                            <div class="service-icon">
+                                <img src="./assets/img/people-service/people-s-1.svg" alt="people-s-img">
+                                <div class="circle-service"></div>
+                            </div>
+                            <div>
+                                <h5>Zonnepanelen</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                            </div>
                           </div>
                         </div>
                         <!-- Repeat This Card for Other Services -->
-                        <div class="col-md-4 col-lg-3">
-                          <div class="service-card">
-                            <div class="service-icon">🔧</div>
-                            <h5>Zonnepanelen</h5>
-                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                          </div>
+                        <!-- Single Card -->
+                        <div class="col-md-6 col-12 col-lg-3">
+                            <div class="service-card WOW animate__animated animate__fadeInLeft animate__fast animate__delay-2s">
+                                <div class="service-icon">
+                                    <img src="./assets/img/people-service/people-s-2.svg" alt="people-s-img">
+                                    <div class="circle-service"></div>
+                                </div>
+                                <div>
+                                    <h5>Zonnepanelen</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-4 col-lg-3">
-                          <div class="service-card">
-                            <div class="service-icon">🔌</div>
-                            <h5>Zonnepanelen</h5>
-                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                          </div>
+                        <!-- Single Card -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="service-card WOW animate__animated animate__fadeInRight animate__fast animate__delay-2s">
+                              <div class="service-icon">
+                                  <img src="./assets/img/people-service/people-s-3.svg" alt="people-s-img">
+                                  <div class="circle-service"></div>
+                              </div>
+                                <div>
+                                    <h5>Zonnepanelen</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-4 col-lg-3">
-                          <div class="service-card">
-                            <div class="service-icon">⚙️</div>
-                            <h5>Zonnepanelen</h5>
-                            <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                        <!-- Single Card -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="service-card WOW animate__animated animate__fadeInRight animate__slow animate__delay-2s">
+                                <div class="service-icon">
+                                    <img src="./assets/img/people-service/people-s-1.svg" alt="people-s-img">
+                                    <div class="circle-service"></div>
+                                </div>
+                                <div>
+                                    <h5>Zonnepanelen</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                </div>
+                            </div>
                           </div>
+                    </div>
+                    <div class="row g-20">
+                       <!-- Single Card -->
+                       <div class=" col-12 col-md-6 col-lg-3">
+                        <div class="service-card WOW animate__animated animate__fadeInLeft animate__fast animate__delay-2s">
+                          <div class="service-icon">
+                              <img src="./assets/img/people-service/people-s-1.svg" alt="people-s-img">
+                              <div class="circle-service"></div>
+                          </div>
+                          <h5>Zonnepanelen</h5>
+                          <p>Lorem Ipsum is simply dummy text of the printing.</p>
                         </div>
                       </div>
+                      <!-- Repeat This Card for Other Services -->
+                      <!-- Single Card -->
+                        <div class="col-md-6 col-lg-3 col-12">
+                            <div class="service-card WOW animate__animated animate__fadeInBottomLeft animate__slow animate__delay-2s">
+                                <div class="service-icon">
+                                    <img src="./assets/img/people-service/people-s-3.svg" alt="people-s-img">
+                                    <div class="circle-service"></div>
+                                </div>
+                                <div>
+                                    <h5>Zonnepanelen</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Card -->
+                        <div class="col-md-6 col-lg-3 col-12">
+                            <div class="service-card WOW animate__animated animate__fadeInTopLeft animate__fast animate__delay-2s">
+                                <div class="service-icon">
+                                    <img src="./assets/img/people-service/people-s-2.svg" alt="people-s-img">
+                                    <div class="circle-service"></div>
+                                </div>
+                                <div>
+                                    <h5>Zonnepanelen</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Card -->
+                        <div class="col-md-6 col-lg-3 col-12">
+                            <div class="service-card WOW animate__animated animate__fadeInTopRight animate__slower animate__delay-2s">
+                                <div class="service-icon">
+                                    <img src="./assets/img/people-service/people-s-1.svg" alt="people-s-img">
+                                    <div class="circle-service"></div>
+                                </div>
+                                <div>
+                                    <h5>Zonnepanelen</h5>
+                                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- people helpfull service -->
-
-
+        <!-- Our work section -->
+        <section class="background-design our_work pt-80 pb-80">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="out-work-title">
+                        <p>ELEKTROTECHNIEK • KEUKENTECHNIEK</p>
+                        <h1>Ons werk</h1>
+                    </div>
+                    <p class="text-muted description-text">In ons portfolio vindt u een selectie van projecten die we met trots hebben uitgevoerd. Elke foto geeft een blik op onze expertise in elektrotechniek en keukentechniek. Neem een kijkje en laat u inspireren door de mogelijkheden die wij bieden voor zowel particuliere als zakelijke klanten.</p>
+                </div>
+                <div class="mt-60">
+                    <div class="our_work_wrap owl-carousel">
+                        <div class="project-item text-start mb-30">
+                            <img src="/assets/img/our-works/our-work-1.jpg" alt="Hotels">
+                            <h6>Hotels, restaurants & snackbar</h6>
+                        </div>
+                        <div class="project-item text-start mb-30">
+                            <img src="/assets/img/our-works/our-work-2.jpg" alt="Healthcare">
+                            <h6>Zorg & ziekenhuizen</h6>
+                        </div>
+                        <div class="project-item text-start mb-30">
+                            <img src="/assets/img/our-works/our-work-3.jpg" alt="Schools">
+                            <h6>Scholen</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our work section -->
         <!-- footer area -->
         <div class="footer-area pt-70 pb-80 footer-bg">
             <div class="shape-one">
@@ -366,13 +402,13 @@
         <!-- cube carousel  -->
          
 	<!-- JS here -->
-       <script src="/assets/js/jquery-1.12.4.min.js"></script>
-       <script src="/assets/js/modernizr-3.5.0.min.js"></script>
-       <script src="/assets/js/jquery.scrollUp.min.js"></script>
-       <script src="/assets/js/owl.carousel.min.js"></script>
-       <script src="/assets/js/all.min.js"></script>
-       <script src="/assets/js/wow.min.js"></script>
-       <script src="/assets/js/script.js"></script>
+       <script src="./assets/js/jquery-v3.1.4.min.js"></script>
+       <!-- <script src="./js/modernizr-3.5.0.min.js"></script> -->
+       <!-- <script src="./js/jquery.scrollUp.min.js"></script> -->
+       <script src="./assets/js/owl.carousel.min.js"></script>
+       <script src="./assets/js/all.min.js"></script>
+       <script src="./assets/js/wow.min.js"></script>
+       <script src="./assets/js/script.js"></script>
        
     </body>
 </html>
