@@ -167,8 +167,17 @@
           margin-bottom: 5px;
      }
      .description-text{
-          margin-bottom: 20px;
+          margin-bottom: 30px;
+          font-size: 17px;
+          line-height: 25px;
+          text-align: center;
      }
+     .out-work-title {
+          text-align: center;
+      }
+     .out-work-title h1 {
+         font-size: 30px;
+      }
      .contact-card-icon {
           font-size: 30px;
           width: 55px;
@@ -244,9 +253,9 @@
 }
 /* Large Mobile :480px. */
 @media only screen and (max-width: 767px) {
-     .contact-card{
+     /* .contact-card{
           width: 425px;
-     }
+     } */
      /* #grid-area{
           display: grid;
           grid-template-columns: repeat(1fr);
