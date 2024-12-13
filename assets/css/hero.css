@@ -661,6 +661,10 @@ section.people_helpFull_Service .people-service-shape img {
 
 
 /* call to action */
+.call-to-action{
+    position: relative;
+    z-index: 2;
+}
 .call-to-action .section-bg{
     position: absolute;
     top: 0;
