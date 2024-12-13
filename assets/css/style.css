@@ -24,7 +24,7 @@
 
 
 /* 1. Theme default css */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
 	list-style: none;
 	box-sizing: border-box;
@@ -33,7 +33,7 @@
 	padding: 0;
 }
 .container{
-	max-width: 1360px;
+	max-width: 1800px;
 	width: 100%;
 	padding: 3rem;
 	margin: auto;
@@ -375,18 +375,20 @@ label {
 
 /* scrollUp */
 #scrollUp {
-	background: #7DBA2F;
-	height: 35px;
-	width: 35px;
-	right: 50px;
-	bottom: 77px;
+	background-color: #333;
 	color: #fff;
-	font-size: 20px;
-	text-align: center;
 	border-radius: 50%;
+	padding: 10px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	display: none;
+	cursor: pointer;
 	font-size: 20px;
-	line-height: 34px;
-}
+	width: 50px;
+	height: 50px;
+	text-align: center;
+   }
 #scrollUp:hover {
 	background: #444;
 }

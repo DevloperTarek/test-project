@@ -1,0 +1,162 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "properties": { "name_bn": "ঢাকা" }, "geometry": { "type": "Point", "coordinates": [90.4125, 23.8103] } },
+    { "type": "Feature", "properties": { "name_bn": "চট্টগ্রাম" }, "geometry": { "type": "Point", "coordinates": [91.8317, 22.3569] } },
+    { "type": "Feature", "properties": { "name_bn": "খুলনা" }, "geometry": { "type": "Point", "coordinates": [89.5678, 22.8200] } },
+    { "type": "Feature", "properties": { "name_bn": "রাজশাহী" }, "geometry": { "type": "Point", "coordinates": [88.6011, 24.3745] } },
+    { "type": "Feature", "properties": { "name_bn": "সিলেট" }, "geometry": { "type": "Point", "coordinates": [91.8687, 24.8993] } },
+    { "type": "Feature", "properties": { "name_bn": "বরিশাল" }, "geometry": { "type": "Point", "coordinates": [90.3667, 22.7010] } },
+    { "type": "Feature", "properties": { "name_bn": "রংপুর" }, "geometry": { "type": "Point", "coordinates": [89.2516, 25.7468] } },
+    { "type": "Feature", "properties": { "name_bn": "ময়মনসিংহ" }, "geometry": { "type": "Point", "coordinates": [90.4128, 24.7471] } },
+    { "type": "Feature", "properties": { "name_bn": "নোয়াখালী" }, "geometry": { "type": "Point", "coordinates": [91.0982, 22.8242] } },
+    { "type": "Feature", "properties": { "name_bn": "ফেনী" }, "geometry": { "type": "Point", "coordinates": [91.4155, 23.0176] } },
+    { "type": "Feature", "properties": { "name_bn": "কুমিল্লা" }, "geometry": { "type": "Point", "coordinates": [91.1781, 23.4601] } },
+    { "type": "Feature", "properties": { "name_bn": "লক্ষ্মীপুর" }, "geometry": { "type": "Point", "coordinates": [90.8457, 22.9461] } },
+    { "type": "Feature", "properties": { "name_bn": "গোপালগঞ্জ" }, "geometry": { "type": "Point", "coordinates": [89.8237, 23.0052] } },
+    { "type": "Feature", "properties": { "name_bn": "ফরিদপুর" }, "geometry": { "type": "Point", "coordinates": [89.8180, 23.5989] } },
+    { "type": "Feature", "properties": { "name_bn": "মাদারীপুর" }, "geometry": { "type": "Point", "coordinates": [90.2024, 23.1643] } },
+    { "type": "Feature", "properties": { "name_bn": "শরীয়তপুর" }, "geometry": { "type": "Point", "coordinates": [90.3456, 23.2425] } },
+    { "type": "Feature", "properties": { "name_bn": "গাজীপুর" }, "geometry": { "type": "Point", "coordinates": [90.4125, 24.0024] } },
+    { "type": "Feature", "properties": { "name_bn": "নারায়ণগঞ্জ" }, "geometry": { "type": "Point", "coordinates": [90.5105, 23.6238] } },
+    { "type": "Feature", "properties": { "name_bn": "মুন্সীগঞ্জ" }, "geometry": { "type": "Point", "coordinates": [90.5296, 23.5402] } },
+    { "type": "Feature", "properties": { "name_bn": "ব্রাহ্মণবাড়িয়া" }, "geometry": { "type": "Point", "coordinates": [91.1169, 23.9570] } },
+    { "type": "Feature", "properties": { "name_bn": "টাঙ্গাইল" }, "geometry": { "type": "Point", "coordinates": [89.9269, 24.2763] } },
+    { "type": "Feature", "properties": { "name_bn": "জামালপুর" }, "geometry": { "type": "Point", "coordinates": [89.9344, 24.9372] } },
+    { "type": "Feature", "properties": { "name_bn": "শেরপুর" }, "geometry": { "type": "Point", "coordinates": [90.0180, 25.0210] } },
+    { "type": "Feature", "properties": { "name_bn": "নেত্রকোনা" }, "geometry": { "type": "Point", "coordinates": [90.7200, 24.8952] } },
+    { "type": "Feature", "properties": { "name_bn": "দিনাজপুর" }, "geometry": { "type": "Point", "coordinates": [88.6355, 25.6243] } },
+    { "type": "Feature", "properties": { "name_bn": "কুড়িগ্রাম" }, "geometry": { "type": "Point", "coordinates": [89.6534, 25.8054] } },
+    { "type": "Feature", "properties": { "name_bn": "লালমনিরহাট" }, "geometry": { "type": "Point", "coordinates": [89.4465, 25.9174] } },
+    { "type": "Feature", "properties": { "name_bn": "পঞ্চগড়" }, "geometry": { "type": "Point", "coordinates": [88.5595, 26.3388] } },
+    { "type": "Feature", "properties": { "name_bn": "ঠাকুরগাঁও" }, "geometry": { "type": "Point", "coordinates": [88.4507, 25.9911] } },
+    { "type": "Feature", "properties": { "name_bn": "নিলফামারি" }, "geometry": { "type": "Point", "coordinates": [88.8122, 25.9317] } },
+    { "type": "Feature", "properties": { "name_bn": "বরগুনা" }, "geometry": { "type": "Point", "coordinates": [90.1251, 22.1422] } },
+    { "type": "Feature", "properties": { "name_bn": "পটুয়াখালী" }, "geometry": { "type": "Point", "coordinates": [90.3012, 22.3585] } },
+    { "type": "Feature", "properties": { "name_bn": "ঝালকাঠি" }, "geometry": { "type": "Point", "coordinates": [90.1880, 22.6406] } },
+    { "type": "Feature", "properties": { "name_bn": "বাগেরহাট" }, "geometry": { "type": "Point", "coordinates": [89.7925, 22.6516] } },
+    { "type": "Feature", "properties": { "name_bn": "সাতক্ষীরা" }, "geometry": { "type": "Point", "coordinates": [89.0750, 22.7230] } },
+    { "type": "Feature", "properties": { "name_bn": "চাঁদপুর" }, "geometry": { "type": "Point", "coordinates": [90.6413, 23.2337] } },
+    { "type": "Feature", "properties": { "name_bn": "কিশোরগঞ্জ" }, "geometry": { "type": "Point", "coordinates": [90.9505, 24.4334] } },
+    {
+      "type": "Feature",
+      "properties": { "name_bn": "আশুলিয়া" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [90.365, 23.832] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name_bn": "খুলনা সদর" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.5325, 22.8144]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name_bn": "মিরপুর" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [90.2345, 23.8776]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name_bn": "বঙ্গবন্ধু শেখ মুজিব" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [91.8124, 23.5552]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name_bn": "ইশ্বরদী ইউনিয়ন" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.1865, 24.1669]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name_bn": "কাউলজান ইউনিয়ন" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [90.2686, 23.7811]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name_bn": "বাঁধন ইউনিয়ন" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [91.1817, 23.4698]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name_bn": "গোদাগাড়ী ইউনিয়ন" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [88.5875, 24.0591]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name_bn": "চরভদ্রাসন ইউনিয়ন" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [90.2636, 23.5135]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name_bn": "আবদুলপুর ইউনিয়ন" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.5172, 24.4518]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name_bn": "বরিশাল সদর ইউনিয়ন" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [90.4426, 22.8477]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name_bn": "শিবচর ইউনিয়ন" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.9287, 23.4285]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name_bn": "সাদিপুর ইউনিয়ন" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [91.3373, 23.8632]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name_bn": "ফুলতলা ইউনিয়ন" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.2327, 22.9892]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name_bn": "মঙ্গলপুর ইউনিয়ন" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [89.6153, 23.4184]
+      }
+    }
+  ]
+}

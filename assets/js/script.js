@@ -1,19 +1,50 @@
      //  google map
-       // Google Maps Initialization
-       function initMap() {
-         const location = { lat: 52.0116, lng: 4.3571 }; // Coordinates of Zuid-Holland
-         const map = new google.maps.Map(document.getElementById("map"), {
-             zoom: 8,
-             center: location,
-         });
-   
-         // Add marker
-         new google.maps.Marker({
-             position: location,
-             map: map,
-         });
-     }
 
+ // Initialize the map
+ var map = L.map('map').setView([23.6850, 90.3563], 7);
+ map.on('click', function (e) {
+   alert(`আপনি ক্লিক করেছেন: ল্যাটিটিউড ${e.latlng.lat}, লংটিটিউড ${e.latlng.lng}`);
+});
+
+ // Add OpenStreetMap tiles
+//  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+//  }).addTo(map);
+
+ // Add marker for Dhaka
+ L.marker([23.8103, 90.4125]).addTo(map)
+     .bindPopup("<b>ঢাকা</b><br>বাংলাদেশের রাজধানী.");
+L.circle([23.8103, 90.4125], {
+   color: 'red',
+   fillColor: '#f03',
+   fillOpacity: 0.5,
+   radius: 5000 // রেডিয়াস (মিটারে)
+}).addTo(map)
+//    .bindPopup("ঢাকা সার্কেল");
+
+fetch('bangladesh.json') // GeoJSON ফাইলের পাথ দিন
+.then(response => response.json())
+.then(data => {
+    L.geoJSON(data, {
+        // প্রতিটি পয়েন্টকে বৃত্ত হিসেবে রেন্ডার করার জন্য
+        pointToLayer: (feature, latlng) => {
+            return L.circle(latlng, {
+                radius: 500, // রেডিয়াস মিটার এ
+                color: '#000',
+                size: 100, // বৃত্তের সীমানার রঙ
+                fillColor: '#f03', // বৃত্তের ভেতরের রঙ
+                fillOpacity: 0.5 // বৃত্তের ভেতরের স্বচ্ছতা
+            });
+        },
+        onEachFeature: (feature, layer) => {
+            // প্রতিটি ফিচারের জন্য পপআপ যোগ করুন
+            layer.bindPopup(`<b>${feature.properties.name_bn}</b>`);
+        }
+    }).addTo(map);
+});
+
+
+// jquery start
 
 $(document).ready(function(){
 
@@ -131,9 +162,20 @@ $(document).ready(function(){
            }
        })
        
-
+ // Scroll Up প্লাগিন চালু করুন
+ $.scrollUp({
+   scrollName: 'scrollUp', // বাটনের id
+   scrollDistance: 300, // স্ক্রল করার পর বাটনটি প্রদর্শিত হবে
+   scrollFrom: 'top', // স্ক্রল করবেন উপরের দিক থেকে
+   scrollSpeed: 300, // বাটনটি কত দ্রুত স্ক্রল হবে
+   easingType: 'linear', // এনিমেশন টাইপ
+   animation: 'fade', // ফেড এনিমেশন
+   animationSpeed: 200, // এনিমেশন স্পিড
+   scrollText: '<i class="fas fa-angle-up"></i>', // বাটনে টেক্সট
+   zIndex: 2147483647 // বাটনের z-index
+});
   // Initialize map when window loads
-  window.onload = initMap;
+  
        /* magnificPopup img view */
     //    $('.popup-image').magnificPopup({
     //           type: 'image',

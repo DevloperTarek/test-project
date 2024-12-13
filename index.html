@@ -18,11 +18,12 @@
         <!-- <link rel="stylesheet" href="./css/owl.theme.defaultv-2.3.4.min.css"> -->
         <!-- <link rel="stylesheet" href="css/header.css"> -->
         <link rel="stylesheet" href="./assets/css/all.min.css">
-        <!-- <link rel="stylesheet" href="./css/boxicons.min.css"> -->
+        <!-- Include Leaflet CSS -->
         <link rel="stylesheet" href="./assets/css/default.css">
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
+        
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
         <link rel="stylesheet" href="./assets/css/hero.css">
         <link rel="stylesheet" href="./assets/css/responsive.css">
         <link rel="stylesheet" href="./assets/css/style.css">
@@ -125,7 +126,9 @@
                 <div class="row align-items-center gap-60">
                   <!-- Image Section -->
                   <div class="col-lg-4 mb-100 mb-lg-0" id="service-wraper-bg">
-                    <img src="./assets/img/service/service-bg.jpg" alt="Technician at work" class="img-fluid rounded service-bg-img">
+                    <div class="service-bg-img">
+                        <img src="./assets/img/service/service-bg.jpg" alt="Technician at work" class="img-fluid rounded service-bg-img">
+                    </div>
                     <div class="experience-box mt-3 WOW animate__animated animate__fadeInLeft animate__slow animate__delay-1s">
                       30 <br>Jaar<br> Ervaring
                     </div>
@@ -294,33 +297,33 @@
             </div> -->
             <div class="container">
                 <div class="d-flex justify-content-between mb-100" id="our-work-top-title">
-                    <div class="out-work-title">
+                    <div class="out-work-title WOW animate__animated animate__backInUp animate__slow">
                         <p>ELEKTROTECHNIEK • KEUKENTECHNIEK</p>
                         <h1>Ons werk</h1>
                     </div>
-                    <p class="text-muted description-text">In ons portfolio vindt u een selectie van projecten die we met trots hebben uitgevoerd. Elke foto geeft een blik op onze expertise in elektrotechniek en keukentechniek. Neem een kijkje en laat u inspireren door de mogelijkheden die wij bieden voor zowel particuliere als zakelijke klanten.</p>
+                    <p class="text-muted description-text WOW animate__animated animate__fadeInRight animate__slow">In ons portfolio vindt u een selectie van projecten die we met trots hebben uitgevoerd. Elke foto geeft een blik op onze expertise in elektrotechniek en keukentechniek. Neem een kijkje en laat u inspireren door de mogelijkheden die wij bieden voor zowel particuliere als zakelijke klanten.</p>
                 </div>
                 <div class="mt-60">
                     <div class="our_work_wrap owl-carousel">
-                        <div class="project-item text-start mb-30">
+                        <div class="project-item text-start mb-30 WOW animate__animated animate__fadeInLeft animate__slow">
                             <div class="our_work_img">
                                 <img src="./assets/img/our-works/our-work-1.jpg" alt="snackbar">
                             </div>
                             <h6>Hotels, restaurants & snackbar</h6>
                         </div>
-                        <div class="project-item text-start mb-30">
+                        <div class="project-item text-start mb-30 WOW animate__animated animate__fadeInLeft animate__slow">
                             <div class="our_work_img">
                                 <img src="./assets/img/our-works/our-work-2.jpg" alt="Zorg & ziekenhuizen">
                             </div>
                             <h6>Zorg & ziekenhuizen</h6>
                         </div>
-                        <div class="project-item text-start mb-30">
+                        <div class="project-item text-start mb-30 WOW animate__animated animate__fadeInRight animate__slow">
                             <div class="our_work_img">
                                 <img src="./assets/img/our-works/our-work-3.jpg" alt="Scholen">
                             </div>
                             <h6>Scholen</h6>
                         </div>
-                        <div class="project-item text-start mb-30">
+                        <div class="project-item text-start mb-30 WOW animate__animated animate__fadeInLeft animate__slow">
                             <div class="our_work_img">
                                 <img src="./assets/img/our-works/our-work-1.jpg" alt="Scholen">
                             </div>
@@ -331,126 +334,194 @@
             </div>
         </section>
         <!-- Our work section -->
-        <!-- google map -->
-        <div class="container my-5">
-            <div class="row align-items-center">
-                <!-- Left Text Content -->
-                <div class="col-md-6">
-                    <h6 class="text-danger text-uppercase fw-bold">Wat Is Ons Werkgebied?</h6>
-                    <h2 class="fw-bold">Zuid-Holland</h2>
+        <!-- review section -->
+        <section class="reviews-section">
+            <div class="container">
+                <div class="review-section-title text-center">
+                    <span class="text-danger">ONTDEK ONZE KLANTREVIEWS</span>
+                    <h1>Wat zeggen onze klanten?</h1>
                     <p>
-                        <span class="highlight">XXXX</span> is actief in Zuid-Holland, waar ik mijn expertise in elektrotechniek 
-                        en keukentechniek met trots aanbied. Als eenmanszaak bedien ik zowel particuliere als zakelijke klanten 
-                        in diverse gemeenten en plaatsen, zoals Rotterdam, Den Haag, Leiden, Dordrecht en Zoetermeer. 
-                    </p>
-                    <p>
-                        Of je nu een renovatie plant in een van de historische wijken van Delft of een nieuwe keuken wilt 
-                        installeren in Gouda, ik sta klaar om je te ondersteunen.
-                    </p>
-                    <p>
-                        Met een focus op kwaliteit en klanttevredenheid streef ik ernaar om in heel Zuid-Holland betrouwbare 
-                        en innovatieve oplossingen te bieden.
+                        Wij laten onze klanten liever vertellen over hun ervaringen met ons. Hun feedback is voor ons van groot belang en helpt ons om de verwachtingen van onze klanten te overtreffen. Helpt jij ons ook door een mooie review achter te laten?
                     </p>
                 </div>
-        
-                <!-- Right Map or Image -->
-                <div class="col-md-6">
-                    <div id="map" class="map-container"></div>
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-4">
+                        <div class="review-card">
+                            <div class="prev-absolute-wrap">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <div class="preview-info">
+                                <h3>Voor een goede vaatwasmonteur bel mike</h3>
+                                <div class="prev-details">
+                                    <div class="prev-img">
+                                        <!-- <img src="./assets/img/preview/google.png" alt="google-logo"> -->
+                                        <i class="fab fa-google"></i>
+                                    </div>
+                                    <p class="text-muted">Johan Verbraak<span>Particulier</span></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-4">
+                        <div class="review-card">
+                            <div class="prev-absolute-wrap">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <div class="preview-info">
+                                <h3>Voor een goede vaatwasmonteur bel mike</h3>
+                                <div class="prev-details">
+                                    <div class="prev-img">
+                                        <!-- <img src="./assets/img/preview/google.png" alt="google-logo"> -->
+                                        <i class="fab fa-google"></i>
+                                    </div>
+                                    <p class="text-muted">Johan Verbraak<span>Particulier</span></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto text-center mt-50">
+                    <a href="#" class="btn btn-review">Schrijf een review <i class="fas fa-long-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- review section -->
+        <!-- google map -->
+        <div class="google-app-enti">
+            <div class="container">
+                <div class="row gap-20 align-items-center">
+                    <!-- Left Text Content -->
+                    <div class="col-md-6 mb-30">
+                        <h6 class="text-danger text-uppercase fw-bold">Wat Is Ons Werkgebied?</h6>
+                        <h2 class="fw-bold">Zuid-Holland</h2>
+                        <p>
+                            <span class="highlight">XXXX</span> is actief in Zuid-Holland, waar ik mijn expertise in elektrotechniek 
+                            en keukentechniek met trots aanbied. Als eenmanszaak bedien ik zowel particuliere als zakelijke klanten 
+                            in diverse gemeenten en plaatsen, zoals Rotterdam, Den Haag, Leiden, Dordrecht en Zoetermeer. 
+                        </p>
+                        <p>
+                            Of je nu een renovatie plant in een van de historische wijken van Delft of een nieuwe keuken wilt 
+                            installeren in Gouda, ik sta klaar om je te ondersteunen.
+                        </p>
+                        <p>
+                            Met een focus op kwaliteit en klanttevredenheid streef ik ernaar om in heel Zuid-Holland betrouwbare 
+                            en innovatieve oplossingen te bieden.
+                        </p>
+                    </div>
+            
+                    <!-- Right Map or Image -->
+                    <div class="col-md-6">
+                        <!-- <div id="map" class="map-container"></div> -->
+                        <!-- <svg width="800" height="600"></svg> -->
+                        <div id="map"></div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- google map -->
-        <!-- footer area -->
-        <!-- <div class="footer-area pt-70 pb-80 footer-bg">
-            <div class="shape-one">
-                <img src="./images/shape/why-choose-slice.png" alt="">
+        <!-- call to action -->
+        <section class="pt-80 pb-80 call-to-action position-relative z-2">
+            <div class="section-bg">
+
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 mb-40">
-                        <div class="footer-wid">
-                            <h4>Contact Us</h4>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-phone"></i>
-                                    <a href="tel:+1 23 567 8596">
-                                        <strong>+1 23 567 8596</strong>
-                                    </a>
-                                    <p>Support 24/7 Weekdays</p>
-                                </li>
-                                <li>
-                                    <i class="fas fa-map-marker"></i>
-                                    <p>Auhandy Tower, New York, NY 10013, USA</p>
-                                </li>
-                                <li>
-                                    <i class="fas fa-envelope"></i>
-                                    <a href="mailto:info@example.com">info@example.com</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-stopwatch"></i>
-                                    <p>Weekdays: 09:00am - 06:00pm</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-40">
-                        <div class="footer-wid">
-                            <h4>Our Services</h4>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="footer-menu">
-                                        <ul>
-                                            <li><a href="#">Electrical</a></li>
-                                            <li><a href="#">Plambing</a></li>
-                                            <li><a href="#">Eather Replace</a></li>
-                                            <li><a href="#">Selfish Working</a></li>
-                                            <li><a href="#">Self work</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-40">
-                                    <div class="footer-menu">
-                                        <ul>
-                                            <li><a href="#">Team Work</a></li>
-                                            <li><a href="#">Shamping</a></li>
-                                            <li><a href="#">Shadow</a></li>
-                                            <li><a href="#">Shadow Design</a></li>
-                                            <li><a href="#">Graphic Design</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-40">
-                        <div class="twinty-percent-off text-center">
-                            <h4>Get <strong>25%</strong>OFF</h4>
-                            <p>Electrical Service</p>
-                            <div class="unic_code">
-                                <p>Redeem Code: <span class="unic">HANDYHPY28</span></p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="call-to-action-text">
+                    <h5> Neem gerust contact met ons op.</h5>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom pt-25 pb-25 text-center footer-bg">
-            Copyright &amp; 2018 <a href="#">AUhandy</a>. Get The Theme
-        </div> -->
+        </section>
+        <!-- call to action -->
+        <!-- footer area -->
+       
+        <section class="footer-widzet-area bg-black pt-200 pb-50">
+            <div class="container">
+                <div class="footer-contact-system">
+                    <div class="row gap-20">
+                        <!-- Call Us Card -->
+                        <div class="col-lg-6 col-md-6 col-12 col-xl-3 mb-30 WOW animate__animated animate__fadeInTopLeft animate__fast animate__delay-1s">
+                               <div class="contact-card footer-contact-item">
+                                      <div class="contact-card-icon">
+                                             <i class="fas fa-phone"></i>
+                                      </div>
+                                      <div class="contact-wrap">
+                                             <h5 class="contact-card-title">Bel ons</h5>
+                                             <p>Neem telefonisch contact met ons op tijdens kantooruren.</p>
+                                             <a href="tel:+31612345678" class="contact-card-link">+31 6 12 34 56 78</a>
+                                      </div>
+                               </div>
+                        </div>
+          
+                        <!-- Email Us Card -->
+                        <div class="col-lg-6 col-md-6 col-12 col-xl-3 mb-30 WOW animate__animated animate__fadeInLeft animate__fast animate__delay-1s">
+                               <div class="contact-card footer-contact-item">
+                                      <div class="contact-card-icon">
+                                             <i class="fas fa-envelope"></i>
+                                      </div>
+                                      <div class="contact-wrap">
+                                             <h5 class="contact-card-title">Email ons</h5>
+                                             <p>Stuur ons een e-mail en wij beantwoorden al uw vragen.</p>
+                                             <a href="mailto:info@VERVANGEN.nl" class="contact-card-link">info@VERVANGEN.nl</a>
+                                      </div>
+                               </div>
+                        </div>
+          
+                        <!-- WhatsApp Us Card -->
+                        <div class="col-lg-6 col-md-6 col-12 col-xl-3 mb-30 WOW animate__animated animate__fadeInTopRight animate__fast animate__delay-1s">
+                            <div class="contact-card footer-contact-item">
+                                <div class="contact-card-icon">
+                                        <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="contact-wrap">
+                                    <h5 class="contact-card-title">WhatsApp ons</h5>
+                                    <p>Stuur ons 24/7 een WhatsApp bericht voor al uw vragen.</p>
+                                    <a href="mailto:info@VERVANGEN.nl" class="contact-card-link">info@VERVANGEN.nl</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bed card -->
+                        <div class="col-lg-6 col-md-6 col-12 col-xl-3 mb-30 WOW animate__animated animate__fadeInTopRight animate__fast animate__delay-1s">
+                            <div class="contact-card footer-contact-item">
+                                <div class="contact-card-icon">
+                                        <i class="fas fa-star"></i>
+                                </div>
+                                <div class="contact-wrap">
+                                    <h5 class="contact-card-title">Bedrijfsgegevens</h5>
+                                    <ul>
+                                        <li><a href="tel:123456789">KVK: 123456789</a></li>
+                                        <li><a href="tel:123456789">BTW: 123456789 </a></li>
+                                        <li><a href="tel:123456789">IBAN: 123456789</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                 </div>
+                </div>
+                <!-- footer bottom area -->
+                <hr class="horizontal-line">
+                <div class="footer-bottom flex-column gap-20 align-items-center text-center d-flex flex-lg-row justify-content-lg-between">
+                   <p><span>&copy;</span> Bedrijfsnaam</p>
+                   <span>Gemaakt door <a href="#">Grandsolution</a></span>
+                </div>
+            </div>
+        </section>
         <!-- footer area -->
 
         <!-- scrollup -->
-        <div id="scrollUp">
-            <!-- <i class="fas fa-angle-up"></i> -->
-        </div>
+        <a href="#" id="scrollUp" title="Scroll Up"><i class="fas fa-angle-up"></i></a>
          
 	<!-- JS here -->
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+        <!-- Include Leaflet JavaScript -->
         <script src="./assets/js/jquery.min.js"></script>
+        <script src="./assets/js/jquery.scrollUp.min.js"></script>
         <script src="./assets/js/owl.carousel.min.js"></script>
         <script src="./assets/js/all.min.js"></script>
         <script src="./assets/js/wow.min.js"></script>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="https://unpkg.com/leaflet-tilelayer-cartodb"></script>
         <script src="./assets/js/script.js"></script>
        
     </body>

@@ -24,7 +24,8 @@
       }
      .service-card p {
           font-size: 13px;
-          line-height: 25px;
+          line-height: 28px;
+          font-weight: 400;
      }
      .people-service-shape img{
           visibility: visible;
@@ -85,8 +86,8 @@
           left: -16px;
      }
      .service-card p {
-          font-size: 12px;
-          line-height: 20px;
+          font-size: 13px;
+          line-height: 28px;
      }
      .shape-4 img {
           max-width: 90px;
@@ -111,6 +112,9 @@
 }
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+     .reviews-section .review-card {
+          padding: 50px 0 50px 50px;
+     }
      #our-work-top-title{
           display: flex;
           flex-direction: column;
@@ -147,7 +151,31 @@
 
  
 /* small mobile :320px. */
-@media only screen and (min-width: 280px) and (max-width:520px) {
+@media only screen and (min-width: 280px) and (max-width:550px) {
+     .google-app-enti h6 {
+          font-size: 17px;
+          line-height: 20px;
+      }
+      
+      .google-app-enti h2 {
+          font-size: 31px;
+          line-height: 54px;
+      }
+      
+      .google-app-enti p {
+          font-size: 14px;
+          line-height: 25px;
+      }
+      
+      .google-app-enti p:last-child {
+          margin-top: 10px;
+      }
+     .prev-absolute-wrap svg{
+          visibility: hidden;
+     }
+     .reviews-section .review-card {
+          padding: 30px 0 30px 30px;
+     }
      /* hero area */
      .contact-card{
           flex-direction: column;
@@ -249,21 +277,71 @@
      }
 }
 /* small mobile :280px. */
-@media only screen and (max-width:220px){
+@media only screen and (min-width:220px) and (max-width:480px){
+     .review-card .preview-info h3 {
+          font-size: 18px;
+          line-height: 34px;
+     }
+     .call-to-action-text h5 {
+          font-size: 24px;
+          text-align: center;
+     }
+     .review-section-title p {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 30px;
+      }
+     .review-section-title h1 {
+          font-size: 30px;
+          line-height: 40px;
+      }
+     .preview-info .prev-details .prev-img svg {
+          font-size: 27px;
+          padding: 10px;
+     }
+     .service-card p{
+          font-size: 14px;
+          line-height: 28px;
+     }
+     .prev-details {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+      }
+      .reviews-section .review-card {
+          padding: 20px 0 20px 20px;
+      }
+      .btn-review {
+          padding: 10px 20px;
+          font-size: 10px;
+          font-weight: 500;
+      }
 }
 /* Large Mobile :480px. */
 @media only screen and (max-width: 767px) {
-     /* .contact-card{
-          width: 425px;
-     } */
-     /* #grid-area{
-          display: grid;
-          grid-template-columns: repeat(1fr);
-          row-gap: 22px;
-          column-gap: 22px;
-     } */
 }
 @media only screen and (min-width: 520px) and (max-width: 767px){
+     .preview-info .prev-details .prev-img svg {
+          font-size: 27px;
+          padding: 10px;
+     }
+     .prev-details {
+          display: flex;
+          /* flex-direction: column; */
+          /* align-items: flex-start; */
+          align-items: center;
+          gap: 10px;
+      }
+     .prev-absolute-wrap svg{
+          visibility: hidden;
+     }
+     .reviews-section .review-card {
+          padding: 20px 0 20px 20px;
+     }
+     .review-card .preview-info h3 {
+          font-size: 18px;
+          line-height: 34px;
+     }
      .people_service_title h5{
           text-align: center;
      }
