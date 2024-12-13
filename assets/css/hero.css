@@ -1,14 +1,15 @@
 .hero-section {
-       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/banner-bg.jpg') center/cover no-repeat;
+       background: url('../img/banner-bg.jpg') center/cover no-repeat;
        color: white;
        min-height: 850px;
        height: 100%;
        position: relative;
        padding-bottom: 153px;
+       animation: fadeInUpI 9s linear infinite alternate;
        z-index: 1;
        overflow: hidden;
    }
-   @keyframes fadeInUp {
+   @keyframes fadeInUpI {
        0%{
               transform: scale(1);
               opacity: .5;
@@ -26,9 +27,9 @@
        height: 100%;
        transition-duration: .5s;
        content: "";
-       z-index: -2;
-       background: url('/assets/img/banner-bg.jpg') center/cover no-repeat;
-       animation: fadeInUp 9s linear infinite alternate;
+       z-index: 1;
+       /* background: url('../img/banner-bg.jpg') center/cover no-repeat; */
+       /* animation: fadeInUpI 9s linear infinite alternate; */
    }
    .hero-section::before{
        position: absolute;
@@ -36,8 +37,9 @@
        left: 0;
        width: 100%;
        height: 100%;
-       content: "";
+       opacity: .4;
        z-index: -1;
+       content: "";
        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
    }
    .content-wrapper{
@@ -661,6 +663,10 @@ section.people_helpFull_Service .people-service-shape img {
 
 
 /* call to action */
+.call-to-action{
+    position: relative;
+    z-index: 1;
+}
 .call-to-action .section-bg{
     position: absolute;
     top: 0;
@@ -671,7 +677,7 @@ section.people_helpFull_Service .people-service-shape img {
     background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 1;
+    /* z-index: 1; */
 }
 .call-to-action .section-bg::after{
     position: absolute;
