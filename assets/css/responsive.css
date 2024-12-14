@@ -90,6 +90,10 @@
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
+     .contact-card.footer-contact-item {
+          display: flex;
+          flex-direction: column;
+      }
      .service-shape-5{
          visibility: hidden;
      }
