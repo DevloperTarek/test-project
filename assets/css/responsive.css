@@ -45,6 +45,10 @@
           visibility: hidden;
           opacity: 0;
      }
+     .contact-card.footer-contact-item {
+          display: flex;
+          flex-direction: column;
+      }
      .service-shape-5{
           visibility: hidden;
       }
